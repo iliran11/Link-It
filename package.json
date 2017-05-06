@@ -1,0 +1,25 @@
+{
+  "name": "link-it",
+  "version": "1.0.0",
+  "description": "Initial Commit",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "babel-node index.js",
+    "client": "babel-node start-client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iliran11/Link-It.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iliran11/Link-It/issues"
+  },
+  "homepage": "https://github.com/iliran11/Link-It#readme",
+  "dependencies": {
+    "concurrently": "^3.4.0",
+    "express": "^4.15.2"
+  }
+}
