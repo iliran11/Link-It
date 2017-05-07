@@ -4,7 +4,7 @@
   "description": "Initial Commit",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "concurrently --prefix \"{name}\" --names  \"SERVER,CLIENT\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run server\" \"npm run client\"",
     "server": "babel-node index.js",
     "client": "babel-node start-client.js"
   },
