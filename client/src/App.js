@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 class App extends Component {
   render() {
+axios.get('/authentication')
+.then (response=>{
+  debugger;
+})
     return (
       <div className="App">
         <div className="App-header">
